@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>
-      Крутая тудушка
-    </title>
+    <title>Список задач</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="крутая тудушка">
     <meta name="author" content="Гена Толстов">
     <link rel="stylesheet" href="./pages/index.css">
   </head>
   <body class="body">
+
     <header class="header">
       <!-- <img src="" alt="логотип" class="header__image"> -->
       <h1 class="header__title">ToDoList</h1>
     </header>
-    <!-- <navigation class="top-nav">
-      <button class="top-nav__add-task-button button">Добавить задачу</button>
-    </navigation> -->
+
     <main class="main">
       <section class="assigned-tasks todo-block">
         <button class="assigned-tasks__add-task-button button">Добавить задачу</button>
@@ -46,6 +43,7 @@
         </ol>
       </section>
     </main>
+
     <footer class="footer">
       <p class="footer__copyright">&copy; 2021 Гена Толстов</p>
     </footer>
@@ -56,7 +54,7 @@
         <input type="text" class="task-add-form__input" placeholder="описание задачи"
         aria-label="введите описание задачи">
         <button class="task-add-form__submit-button button" type="submit">Добавить задачу</button>
-        <button class="task-add-form__close-button">X</button>
+        <button class="task-add-form__close-button" type="button">X</button>
       </form>
     </div>
 
@@ -68,5 +66,7 @@
         <button class="list-item__delete-button">X</button>
       </li>
     </template>
+
+    <script src="pages/script.js"></script>
   </body>
 </html>

@@ -19,7 +19,6 @@
   padding: 6px;
   border: 2px solid #5a68b3;
    /* #9096c8; */
-  /* color: black; */
 }
 
 .todo-block {
@@ -34,6 +33,14 @@
 
 .completed-tasks__open-button {
   align-self: center;
+}
+
+.completed-tasks__list {
+  display: none;
+}
+
+.completed-tasks__list_opened {
+  display: block;
 }
 
 .tasks-list {
@@ -76,10 +83,12 @@
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
-  /* background-color: #000;
-  opacity: .5; */
+  display: none;
   background-color: rgba(0, 0, 0, .5);
+}
+
+.task-add-popup_opened {
+  display: flex;
 }
 
 .task-add-popup__form {
