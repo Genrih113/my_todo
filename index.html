@@ -7,44 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="крутая тудушка">
     <meta name="author" content="Гена Толстов">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./pages/index.css">
   </head>
   <body class="body">
     <header class="header">
-      <img src="" alt="логотип" class="header__image">
+      <!-- <img src="" alt="логотип" class="header__image"> -->
       <h1 class="header__title">ToDoList</h1>
     </header>
-    <navigation class="top-nav">
-      <button class="top-nav__add-task-button">Добавить задачу</button>
-    </navigation>
-    <main class="todo-block">
-      <section class="assigned-tasks">
-        <ol class="assigned-tasks__list">
-          <li class="todo-block__list-item">
-            <div class="list-item">
-              <input type="checkbox" class="list-item__check">
-              <span class="list-item__text">first deal</span>
-              <button class="list-item__delete-button">X</button>
-            </div>
+    <!-- <navigation class="top-nav">
+      <button class="top-nav__add-task-button button">Добавить задачу</button>
+    </navigation> -->
+    <main class="main">
+      <section class="assigned-tasks todo-block">
+        <button class="assigned-tasks__add-task-button button">Добавить задачу</button>
+        <ol class="assigned-tasks__list tasks-list">
+          <li class="list-item tasks-list__item">
+            <input class="list-item__checkbox" type="checkbox">
+            <span class="list-item__text">first deal first deal
+              first deal first deal first deal first deal first deal first deal first deal
+            </span>
+            <button class="list-item__delete-button">X</button>
           </li>
-          <li class="todo-block__list-item">
-            <div class="list-item">
-              <input type="checkbox" class="list-item__check">
-              <span class="list-item__text">first deal</span>
-              <button class="list-item__delete-button">X</button>
-            </div>
+          <li class="list-item tasks-list__item">
+            <input class="list-item__checkbox" type="checkbox">
+            <span class="list-item__text">first deal</span>
+            <button class="list-item__delete-button">X</button>
           </li>
         </ol>
       </section>
-      <section class="completed-tasks">
-        <button class="completed-tasks__open-button">Посмотреть выполненные</button>
-        <ol class="completed-tasks__list">
-          <li class="completed-tasks__list-item">
-            <div class="list-item">
-              <input type="checkbox" class="list-item__check">
-              <span class="list-item__text">completed-task</span>
-              <button class="list-item__delete-button">X</button>
-            </div>
+      <section class="completed-tasks todo-block">
+        <button class="completed-tasks__open-button button">Посмотреть выполненные</button>
+        <ol class="completed-tasks__list tasks-list">
+          <li class="list-item tasks-list__item">
+            <input class="list-item__checkbox" type="checkbox">
+            <span class="list-item__text">first deal</span>
+            <button class="list-item__delete-button">X</button>
           </li>
         </ol>
       </section>
@@ -54,16 +51,22 @@
     </footer>
 
     <div class="task-add-popup">
-      <form action="" class="task-add-form">
+      <form action="" class="task-add-form task-add-popup__form">
         <h2 class="task-add-form__title">Новая задача</h2>
         <input type="text" class="task-add-form__input" placeholder="описание задачи"
         aria-label="введите описание задачи">
-        <button class="task-add-form__submit-button" type="submit">Добавить задачу</button>
+        <button class="task-add-form__submit-button button" type="submit">Добавить задачу</button>
+        <button class="task-add-form__close-button">X</button>
       </form>
     </div>
 
     <template class="list-item-template">
-      
+      <li class="list-item tasks-list__item">
+        <!-- <span class="list-item__content"></span> -->
+        <input class="list-item__checkbox" type="checkbox">
+        <span class="list-item__text">first deal</span>
+        <button class="list-item__delete-button">X</button>
+      </li>
     </template>
   </body>
 </html>
