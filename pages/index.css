@@ -12,6 +12,10 @@
   /* #5ac7c8; */
 }
 
+.main {
+  max-width: 600px;
+}
+
 .button {
   /* background-color: #04a863; */
   background-color: #64c497;
