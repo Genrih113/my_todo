@@ -23,7 +23,7 @@
 .button {
   /* background-color: #04a863; */
   background-color: #64c497;
-  width: 70%;
+  /* width: 70%; */
   padding: 6px;
   border: 2px solid #5a68b3;
    /* #9096c8; */
@@ -37,10 +37,12 @@
 
 .assigned-tasks__add-task-button {
   align-self: center;
+  width: 70%;
 }
 
 .completed-tasks__open-button {
   align-self: center;
+  width: 70%;
 }
 
 .completed-tasks__list {
@@ -117,6 +119,9 @@
   justify-content: space-between;
   background-color: #02afb0;
   padding: 20px;
+  border: 2px solid #0269b4;
+  max-width: 600px;
+  width: 70%;
 }
 
 .task-add-form__title {
@@ -130,6 +135,11 @@
   border: 2px solid #0269b4;
 }
 
+.task-add-form__input::placeholder {
+  color: #5a68b3;
+  /* #64c497; */
+}
+
 .task-add-form__close-button {
   position: absolute;
   top: -30px;
@@ -137,5 +147,5 @@
   width: 30px;
   height: 30px;
   background-color: #02afb0;
-  border: none;
+  border: 2px solid #0269b4;
 }
