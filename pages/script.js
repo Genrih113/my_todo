@@ -25,6 +25,11 @@ function closeTaskAddPopup() {
 
 function toggleCompletedTasksList() {
   completedTasksList.classList.toggle('completed-tasks__list_opened');
+  if (completedTasksList.classList.contains('completed-tasks__list_opened')) {
+    toggleCompletedTasksListButton.textContent = 'Скрыть выполненные';
+  } else {
+    toggleCompletedTasksListButton.textContent = 'Посмотреть выполненные';
+  }
 }
 
 function createNewTask(task = taskAddInput.value) {
@@ -139,9 +144,16 @@ completedTasksArray.forEach(task => {
 
 taskAddButton.addEventListener('click', openTaskAddPopup);
 
+taskAddPopup.addEventListener('click', (e) => {
+  if (e.target == e.currentTarget) {
+    closeTaskAddPopup();
+    clearTaskAddFormInput();
+  }
+});
+
 taskAddPopupCloseButton.addEventListener('click', () => {
   closeTaskAddPopup();
-  clearTaskAddFormInput()
+  clearTaskAddFormInput();
 });
 
 toggleCompletedTasksListButton.addEventListener('click', toggleCompletedTasksList);
