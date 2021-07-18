@@ -141,6 +141,10 @@ completedTasksArray.forEach(task => {
   insertTaskPrepend(taskNode, completedTasksList);
 });
 
+completedTasksList.querySelectorAll('.list-item__checkbox').forEach(item => {
+  item.setAttribute('checked', 'true');
+});
+
 
 taskAddButton.addEventListener('click', openTaskAddPopup);
 
